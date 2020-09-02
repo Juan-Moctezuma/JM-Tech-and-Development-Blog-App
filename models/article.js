@@ -1,6 +1,7 @@
 let mongoose = require("mongoose");
 let Comment = require("./comment");
 
+// BLOG POST'S MONGODB SCHEMA / STRUCTURE
 let articleSchema = new mongoose.Schema({
     title: String,
     image: String,
@@ -16,12 +17,13 @@ let articleSchema = new mongoose.Schema({
 		},
 		username: String
 	 },
+    // COMMENT'S ARE ARRAYS THAT DEPEND ON AUTHOR (LIKE PARENT-TO-CHILD RELATIONSHIP)
     comments: [
         {
            type: mongoose.Schema.Types.ObjectId,
            ref: "Comment"
         }
-     ] //comments is an array of object id's but NOT comments themselves
+     ]
 });
 
 module.exports = mongoose.model("Article", articleSchema);
