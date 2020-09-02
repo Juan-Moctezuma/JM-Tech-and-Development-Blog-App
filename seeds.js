@@ -1,8 +1,8 @@
-
 let mongoose = require("mongoose");
 let Article = require("./models/article");
 let Comment   = require("./models/comment");
  
+// DATA USED FOR SCHEME TESTING
 let data = [
     {
         title: "Drone-Based Air Quality Analyzer Developed", 
@@ -38,44 +38,9 @@ let data = [
 ]
  
 function seedDB(){
-   //Remove all campgrounds
-   Article.remove({}, function(err){ // deleteMany
-        /*if(err){
-            console.log(err);
-        }
-        console.log("Blog Posts removed!");
-        Comment.remove({}, function(err) {
-            if(err){
-                console.log(err);
-            }
-            console.log("Comments removed!");
-             //add a few blog posts
-            data.forEach(function(seed) {
-                Article.create(seed, function(err, article) {
-                    if(err){
-                        console.log(err)
-                    } else {
-                        console.log("Article added");
-                        //create a comment
-                        Comment.create(
-                            {
-                                text: "This blog post is in fact pretty accurate",
-                                author: "Mickey Mouse"
-                            }, function(err, comment){
-                                if(err){
-                                    console.log(err);
-                                } else {
-                                    article.comments.push(comment);
-                                    article.save();
-                                    console.log("Created new comment");
-                                }
-                            });
-                    }
-                });
-            });
-        }); */
+   Article.remove({}, function(err){ 
+    // Removes every Article or Blog Post    
     }); 
-    //add a few comments
 }
  
 module.exports = seedDB;
