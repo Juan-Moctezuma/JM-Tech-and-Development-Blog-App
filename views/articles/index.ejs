@@ -1,0 +1,36 @@
+<%- include("../partials/header") %>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1 style="font-size: 450%;">JM Tech & Development</h1>
+                <p style="font-size: 170%; margin-bottom: 30px;">Welcome! read the latest tech and development blog posts</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/articles/new">Add New Blog</a>
+                </p>
+            </div>
+        </header>
+
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+            <% blogs.forEach(function(article) { %>
+                <div class="col-md-4 col-sm-6">
+                    <div class="container"><img src="<%= article.image %>" 
+                              class="img-thumbnail" 
+                              width="355px" 
+                              height="300px">
+                        <figure class="figure">
+                            <figcaption>
+                                    <h5>
+                                        <%= article.title %>
+                                    </h5>  
+                                    <p>
+                                        <a href="/articles/<%= article._id %>" class="btn btn-primary">Read</a>
+                                    </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+<%- include("../partials/footer") %>

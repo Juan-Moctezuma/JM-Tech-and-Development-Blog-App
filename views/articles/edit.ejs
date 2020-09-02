@@ -1,0 +1,54 @@
+<%- include("../partials/header") %>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-center">
+				<h1>Edit <%= article.name %></h1><br>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+					<div class="form-group">
+						<label for="title" style="font-weight: bold;">Rename Title</label>
+						<input class="form-ctrl" style="width: 100%;" type="text" name="article[title]" value="<%= article.title %>" placeholder="Title">
+					</div>
+					<div class="form-group">
+						<label for="image" style="font-weight: bold;">Cover Image</label>
+						<input class="form-ctrl" style="width: 100%;" type="text" name="article[image]" value="<%= article.image %>" placeholder="Image Url">
+					</div>
+					<div class="form-group">
+						<label for="content" style="font-weight: bold;">Post Content</label>
+						<textarea class="form-ctrl" style="width: 100%;" type="text" name="article[content]" cols="20" rows="30" placeholder="Enter Content Here"><%= article.content %></textarea>
+					</div>
+					<button class="btn btn-lg btn-success btn-block">Submit</button><br>
+				</form>
+				<a href="/articles">Cancel and Go Back</a>
+			</div>  
+		</div>
+	</div>
+
+<!--
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Edit <%= article.name %></h1>
+		<div style="width: 30%; margin: 25px auto;">
+			<form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+				<div class="form-group">
+					<input class="form-ctrl" type="text" name="article[title]" value="<%= article.title %>">
+				</div>
+				<div class="form-group">
+					<input class="form-ctrl" type="text" name="article[image]" value="<%= article.image %>">
+				</div>
+				<div class="form-group">
+					<input class="form-ctrl" type="text" name="article[content]" value="<%= article.content %>">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-primary btn-block">Submit!</button>
+				</div>
+			</form>
+			<div style="text-align: center;">
+				<a href="/articles">Cancel & Go Back</a>	
+			</div>
+		</div>
+	</div>
+</div>
+-->
+<%- include("../partials/footer") %>

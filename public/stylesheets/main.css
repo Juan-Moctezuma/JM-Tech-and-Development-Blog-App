@@ -1,0 +1,11 @@
+body {
+    background: whitesmoke;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.delete-form {
+	display: inline;
+}
