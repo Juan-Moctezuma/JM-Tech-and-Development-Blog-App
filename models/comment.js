@@ -1,5 +1,6 @@
 let mongoose = require("mongoose");
  
+// COMMENT'S MONGODB SCHEMA / STRUCTURE
 let commentSchema = new mongoose.Schema({
 	text: String,
 	createdDt: {
