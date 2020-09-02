@@ -1,9 +1,9 @@
 body {
-    background: whitesmoke;
+	background: whitesmoke;
 }
 
 #delete-form {
-    display: inline;
+	display: inline;
 }
 
 .delete-form {
