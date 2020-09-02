@@ -2,12 +2,6 @@
 <html>
 	<head>
 		<title>JM Tech & Development</title>
-		<!--
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		-->
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,35 +13,30 @@
     </head>
 	<body>
 		<nav class="navbar navbar-dark bg-dark navbar-expand-md mb-4" style="margin-bottom: 20px;">
-			<!--<div class="container">-->
-				<!--<div class="navbar-header">-->
-					<a class="navbar-brand" href="/"><i class="fas fa-laptop-code" style="margin-right: 10px;"></i>JMTD</a>
-					<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				<!--</div>-->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav ml-auto justify-content-end">
-						<% if(!currentUser) { %>
-							<li class="nav-item">
-								<a class="nav-link" href="/login">Login</a>
-							</li>
-							<li class="nav-item"> 
-								<a class="nav-link" href="/register">Sign Up</a>
-							</li>
-						<% } else { %>
-							<li style="padding-top: 7.5px;">
-								<a href="#">Signed In As <%= currentUser.username%></a>
-							</li>
-							<li class="nav-item" style="margin-left: 20px;">
-								<a class="nav-link" href="/logout">Logout</a>
-							</li>
-						<% } %>
-					</ul>
-				</div>
-			<!--</div>-->
+			<a class="navbar-brand" href="/"><i class="fas fa-laptop-code" style="margin-right: 10px;"></i>JMTD</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>	
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto justify-content-end">
+					<% if(!currentUser) { %>
+						<li class="nav-item">
+							<a class="nav-link" href="/login">Login</a>
+						</li>
+						<li class="nav-item"> 
+							<a class="nav-link" href="/register">Sign Up</a>
+						</li>
+					<% } else { %>
+						<li style="padding-top: 7.5px;">
+							<a href="#">Signed In As <%= currentUser.username%></a>
+						</li>
+						<li class="nav-item" style="margin-left: 20px;">
+							<a class="nav-link" href="/logout">Logout</a>
+						</li>
+					<% } %>
+				</ul>
+			</div>
 		</nav>
-
 		<div class="container">
 			<% if(error && error.length > 0){ %>
 				<div class="alert alert-danger" role="alert">
