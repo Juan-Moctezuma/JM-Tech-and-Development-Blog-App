@@ -25,9 +25,10 @@ Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or serve
 5. Node.js (Server-side)
 6. NPM Modules:
    * Ejs
-   * Express
+   * Express / Express-Session
    * Body-Parser
    * Mongoose
+   * Method-Override
    * Connect-Flash
    * Passport / Passport-Local / Passport-Local-Mongoose
    
