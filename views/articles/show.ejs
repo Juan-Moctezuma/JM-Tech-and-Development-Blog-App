@@ -1,17 +1,15 @@
 <%- include("../partials/header") %>
 <div class="container">
     <div class="row">
-
         <div class="col-md-3">
-			<div class="list-group">
-				<li class="list-group-item"><i class="fas fa-user-tie" style="margin-right: 10px;"></i>Author: <%= article.author.username %></li>
-				<li class="list-group-item"><i class="fas fa-comment-alt" style="margin-right: 10px;"></i>Comments: <%= article.comments.length %></li>
-				<li class="list-group-item"><i class="fas fa-clock" style="margin-right: 10px;"></i>Published: <%= moment(article.createdDt).fromNow() %></li><br><br>
-			</div>
+		<div class="list-group">
+			<li class="list-group-item"><i class="fas fa-user-tie" style="margin-right: 10px;"></i>Author: <%= article.author.username %></li>
+			<li class="list-group-item"><i class="fas fa-comment-alt" style="margin-right: 10px;"></i>Comments: <%= article.comments.length %></li>
+			<li class="list-group-item"><i class="fas fa-clock" style="margin-right: 10px;"></i>Published: <%= moment(article.createdDt).fromNow() %></li><br><br>
+		</div>
         </div>
         <div class="col-md-9">
             <h1><%= article.title%></h1><br>
-
             <img src="<%= article.image %>" class="img-thumbnail" width="615px" height="515px" style="margin-bottom: 40px;"><br>
             <% if(currentUser && article.author.id.equals(currentUser._id)){ %>
                 <a class="btn btn-xs btn-warning" href="/articles/<%= article._id %>/edit">Edit</a>
@@ -37,13 +35,12 @@
                             <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
                                 <a class="btn btn-xs btn-warning" 
                                     style="margin-bottom: 20px;"
-									href="/articles/<%=article._id %>/comments/<%=comment._id %>/edit">
-									Edit
-								</a>
-								<form class="delete-form" action="/articles/<%=article._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
-									<input type="submit" style="margin-left: 10px; margin-bottom: 20px;" class="btn btn-xs btn-danger" value="Delete">
-								</form>
-							<% } %>
+				    href="/articles/<%=article._id %>/comments/<%=comment._id %>/edit">Edit
+				</a>
+				<form class="delete-form" action="/articles/<%=article._id %>/comments/<%=comment._id %>?_method=DELETE" method="POST">
+					<input type="submit" style="margin-left: 10px; margin-bottom: 20px;" class="btn btn-xs btn-danger" value="Delete">
+				</form>
+			    <% } %>
                         </div>
                     </div>
                 <% }) %>
@@ -51,5 +48,4 @@
         </div>	
     </div>
 </div>
-
 <%- include("../partials/footer") %>
