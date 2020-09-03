@@ -12,7 +12,7 @@ data to get stored. Errors are handled through flash messages to provide the use
 Heroku: https://jm-tech-and-development.herokuapp.com/
 
 ### Does the code require a local web server to run?
-Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or server.js)
+Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or server.js) file.
 
 ### Directory Tree
 <img src="Image/Directory_Blog_Site.png" width="50%">
