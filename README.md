@@ -3,9 +3,9 @@
 ### Introduction
 
 JM Tech & Development (JMTD) is a fictional blog site for developers and technology enthusiasts. 
-This full-stack application allows the user to create / delete both blog posts and comments.
-JMTD utilizes RESTful architecture and performs CRUD operations for the user (depending on his/her 
-authorization/ownership). This app is connected to a MongoDB (NoSQL Database) cluster which allows 
+This full-stack application allows the user to create and delete their blog posts and / or comments.
+JMTD utilizes RESTful architecture and performs CRUD operations for the user (depending on his / her 
+authorization / ownership). This app is connected to a MongoDB (NoSQL Database) cluster which allows 
 data to get stored. Errors are handled through flash messages to provide the user with feedback.
 
 ### Link
