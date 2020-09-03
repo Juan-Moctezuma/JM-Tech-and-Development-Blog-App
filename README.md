@@ -16,7 +16,7 @@ Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or serve
 
 ### Directory Tree
 
-
+![](Image/Directory_Blog_Site)
 
 ### Technologies
 
