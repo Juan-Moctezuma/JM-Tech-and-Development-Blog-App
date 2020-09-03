@@ -15,8 +15,7 @@ Heroku: https://jm-tech-and-development.herokuapp.com/
 Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or server.js)
 
 ### Directory Tree
-
-![](Image/Directory_Blog_Site.png)
+<img src="Image/Directory_Blog_Site.png" width="50%">
 
 ### Technologies
 
