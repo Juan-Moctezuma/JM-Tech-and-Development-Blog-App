@@ -15,43 +15,7 @@ Heroku: https://jm-tech-and-development.herokuapp.com/
 Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or server.js)
 
 ### Directory Tree
-BLOG_SITE_(JMTD)
-|
-|
-├── middleware
-│   └── index.js
-├── models
-│   ├── article.js
-│   ├── comment.js
-│   └── user.js
-├── node_modules (NOT INCLUDED IN REPOSITORY)  
-├── package-lock.json
-├── package.json
-├── public
-│   └── stylesheets
-│       ├── landing.css
-│       └── main.css
-├── routes
-│   ├── articles.js
-│   ├── comments.js
-│   └── index.js
-├── seeds.js
-├── server.js
-└── views
-    ├── articles
-    │   ├── edit.ejs
-    │   ├── index.ejs
-    │   ├── new.ejs
-    │   └── show.ejs
-    ├── comments
-    │   ├── edit.ejs
-    │   └── new.ejs
-    ├── landing.ejs
-    ├── login.ejs
-    ├── partials
-    │   ├── footer.ejs
-    │   └── header.ejs
-    └── register.ejs
+
 
 
 ### Technologies
