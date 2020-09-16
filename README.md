@@ -1,7 +1,6 @@
 # JM Tech & Development
 
 ### Introduction
-
 JM Tech & Development (JMTD) is a fictional blog site for developers and technology enthusiasts. 
 This full-stack application allows the user to create and delete their blog posts and / or comments.
 JMTD utilizes RESTful architecture and performs CRUD operations for the user (depending on his / her 
@@ -18,7 +17,6 @@ Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or serve
 <img src="Image/Directory_Blog_Site.png" width="50%">
 
 ### Technologies
-
 1. HTML5
 2. CSS3:
    * Responsive Framework: Bootstrap 4
