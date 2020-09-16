@@ -20,7 +20,7 @@ Yes. Be sure to select Port 3000 and 0.0.0.0 IP Address on your app.js (or serve
 ### Technologies
 
 1. HTML5
-2. CSS3
+2. CSS3:
    * Responsive Framework: Bootstrap 4
 3. JavaScript:
    * ES6
